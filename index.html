@@ -1,62 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Profile card component</title>
-  
-  <!--Fonts-->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
-  
-  <!--Styles-->
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-  <div class="container">
-    
-    <!--Background images-->
-    <img src="images/bg-pattern-top.svg" alt="background image top" class="bg-top">
-    <img src="images/bg-pattern-bottom.svg" alt="background image bottom" class="bg-bottom">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-    <!--Profile card-->
-    <div class="card">
-      <!--banner card-->
-      <img src="images/bg-pattern-card.svg" alt="banner image" class="banner-image">
-      
-      <!--Profile image, name, age and city-->
-      <img src="images/image-victor.jpg" alt="profile image" class="profile-image">
-
-      <h1>Victor Crest <span class="number-age">26</span></h1>
-      
-      <p>London</p>
-      
-      <!--account info-->
-      <div class="net-info">
-        <div class="info">
-          <h2>80K <br><span class="type-info">Followers</span></h2>
+    <title>Frontend Mentor | Profile card component</title>
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--Normalize-->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <!--Styles-->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!--Card-->
+      <div class="card">
+        <!--Banner Image-->
+        <img
+          src="./images/bg-pattern-card.svg"
+          alt="banner image"
+          class="card__banner-img"
+        />
+        <!--Profile Image-->
+        <div class="card__profile-info">
+          <img
+            src="./images/image-victor.jpg"
+            alt="profile image"
+            class="profile__img"
+          />
+          <!--Profile Info-->
+          <p class="profile__name">
+            Victor Crest <span class="profile__age">26</span>
+          </p>
+          <p class="profile__city">London</p>
         </div>
-    
-        <div class="info">
-          <h2>803K <br><span class="type-info">Likes</span></h2>
-        </div>
-    
-        <div class="info">
-          <h2>1.4K <br><span class="type-info">Photos</span></h2>
+        <!--Network Info-->
+        <div class="card__profile-network">
+          <div class="profile-network__info">
+            <p class="info__number">
+              80K <br /><span class="info__type">Followers</span>
+            </p>
+          </div>
+
+          <div class="profile-network__info">
+            <p class="info__number">
+              803K <br /><span class="info__type">Likes</span>
+            </p>
+          </div>
+
+          <div class="profile-network__info">
+            <p class="info__number">
+              1.4K <br /><span class="info__type">Photos</span>
+            </p>
+          </div>
         </div>
       </div>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/FrancoGL" target="_blank">FrancoGL</a>.
+      </div>
     </div>
-
-    <!--attribution-->
-    <div class="attribution">
-      <p>
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-        Coded by <a href="#">FrancoGL</a>.
-      </p>
-    </div>
-  </div>
-</body>
+  </body>
 </html>
