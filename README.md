@@ -11,7 +11,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 ![screenshot](https://i.imgur.com/75OCTyd.png)
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/profile-card-component-with-css-W5_eoiHDt)
 - Live Site URL: [Live Site with Vercel](https://profile-card-component-main-blond-chi.vercel.app/)
 
 ## Built with
