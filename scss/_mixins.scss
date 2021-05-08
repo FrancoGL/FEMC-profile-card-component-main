@@ -1,0 +1,29 @@
+@mixin background-image-mobile {
+    background: url('../images/bg-pattern-top.svg'),
+    url("../images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 40vw bottom 55vh, left 50vw top 50vh;
+    background-size: cover;
+}
+
+@mixin background-image-desktop {
+    background-image: url("../images/bg-pattern-top.svg"),
+      url("../images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 52vw bottom 32vh, left 50vw top 47vh;
+    background-size: auto;
+}
+
+@mixin display-flex($flow, $align, $justify) {
+    display: flex;
+    flex-flow: $flow;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+@mixin flex-center {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
